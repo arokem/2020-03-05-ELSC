@@ -11,6 +11,12 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/arokem.css">
 		<link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.css" type="text/css" />
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.js"></script>
+
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -64,7 +70,7 @@
     </section>
 
     <section>
-        <a href="https://escience.washington.edu"><img src="img/eScience.png" height="100px" alt="eScience logo" align="middle"></a>
+        <img src="img/eScience-infographic.png" height=300>
         <p class="fragment">
             Data-driven research
         </p>
@@ -75,8 +81,6 @@
             Building a community of practice: open, reproducible, rigorous and ethical
         </p>
 
-        <br>
-        <img src="img/eScience-infographic.png" height=300>
         <!-- <p class="fragment"><img src="img/msdse-sponsors.png" height=100></p> -->
     </section>
 
@@ -97,19 +101,19 @@
         <div style="position: absolute; left:-2.2em; top:7em">
             <img src="img/brain_icon.png" height=100>
         </div>
-        <div class="fragment" style="position: absolute; left:2em; top:3em;">
+        <div class="fragment" style="position: absolute; left:3em; top:3em;">
                 <video height="100" autoplay loop muted>
                 <source src="img/em-data.mp4">
             </video>
         </div>
 
-        <div class="fragment" style="position: absolute; left:2em; top:7em;">
+        <div class="fragment" style="position: absolute; left:3em; top:7em;">
                 <video height="100" autoplay loop muted>
                     <source src="img/mouse_brain_lsm.mp4">
                 </video>
         </div>
 
-        <div class="fragment" style="position: absolute; left:1em; top:10.5em;">
+        <div class="fragment" style="position: absolute; left:2em; top:10.5em;">
             <video id="MRIvideo" height="150" autoplay loop muted style="playbackRate:0.5;">
                     <source src="img/mri-zstack.mov">
                 </video>
@@ -121,27 +125,27 @@
                 vid.playbackRate = 0.5;
             </script>
 
-        <div class="fragment" style="position: absolute; left:8em; top:7em;">
+        <div class="fragment" style="position: absolute; left:9em; top:7em;">
             <small>Analysis</small>
             <br>
             <img class="fragment" src="img/right-arrow.png" height=40>
         </div>
 
-        <div class="fragment" style="position: absolute; left:12em; top:3em;">
+        <div class="fragment" style="position: absolute; left:13em; top:3em;">
                 <video height="100" autoplay loop muted>
                     <source src="img/em-model.mp4">
                 </video>
         </div>
 
-        <div class="fragment" style="position: absolute; left:11.5em; top:7em;">
+        <div class="fragment" style="position: absolute; left:12.5em; top:7em;">
             <img align="center" src="img/pyafq_segmentation1.gif" height="200">
         </div>
 
-        <div class="fragment" style="position: absolute; left:18.5em; top:7em;">
+        <div class="fragment" style="position: absolute; left:19em; top:7em;">
                 <small>Interpretation</small>
                 <br>
                 <img class="fragment" src="img/right-arrow.png" height=40>
-            </div>
+        </div>
 
         <div class="fragment" style="position: absolute; left:23em; top:0em;">
                 <img src="img/graph-model.png" height=250>
@@ -155,8 +159,8 @@
                 <img src="img/white-matter-reading.png" height=200>
         </div>
 
-        <div class="fragment" style="position: absolute; left:7em; top:12em;">
-                <img src="img/left-arrow.png" width=550>
+        <div class="fragment" style="position: absolute; left:8.5em; top:12em;">
+                <img src="img/left-arrow.png" width=500>
         </div>
 
         <div class="cite" style="font-size:14px">
@@ -730,13 +734,6 @@
 		<p>Model of perception (neural network) for automation and scaling</p>
 	</section>
 
-	<section>
-		<h2>Future applications</h2>
-		<p class="fragment">Other tasks</p>
-		<p class="fragment">Tumor segmentation in MRI</p>
-		<p class="fragment">Other types of data and other procedures</p>
-	</section>
-
     <section>
         <h2>Democratizing citizen science</h2>
         <img src="img/s4s.png">
@@ -750,7 +747,7 @@
 
     <section>
         <h2>Beyond labeled data</h2>
-    Could we discover subtle relationships between different images of the same object?
+    Discovering subtle relationships between different images of the same object
     </section>
 
     <!-- <section>
@@ -856,7 +853,7 @@
  -->
 
 	<section>
-		<h2 >Application: cross-modal image registration</h2>
+		<h2>Application: cross-modal image registration</h2>
 		<img src='img/compare_registrations.png'>
 		<div class="cite">
 			<a href="https://www.biorxiv.org/content/early/2018/03/27/289926">Xiao, Wu, Lee & Rokem <br> (<em>in prep</em>)</a>
@@ -883,25 +880,10 @@
 		<p class="fragment">=> Develop statistical techniques that reduce and harness this complexity</p>
 	</section>
 
-
-	<section>
-		<h4>Normal behavior is supported by brain connectivity</h4>
-		<img src="./img/OldenDays.png" height="505">
-		<div class="cite">
-			Image from <br><a href="https://www.ncbi.nlm.nih.gov/pubmed/16141282">Catani and ffytche (2015)</a>
-		</div>
-	</section>
-
 	<section>
 		<img src="./img/optic-radiation-postmortem.png" height="505" >
 	</section>
 
-	<section>
-		<h3>Not just passive cables</h3>
-		<p class="fragment">Brain connections develop and mature with age</p>
-		<p class="fragment">Individual differences account for differences in behaviour</p>
-		<p class="fragment">Adapt and change with learning</p>
-	</section>
 	<!--
 	<section>
 		<div style="position: absolute; left: 100px;">
@@ -1143,8 +1125,6 @@
 	<section>
 		<h2>Amyotrophic Lateral Sclerosis (ALS)</h2>
 		<img src="img/sarica_results.png" height="300px">
-		<p class="fragment">Classify patients based on the tissue properties in this part of the brain</p>
-		<p class="fragment">Random Forest algorithm => 80% accuracy</p>
 		<div class="cite">
 			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
 		</div>
@@ -1171,8 +1151,8 @@
 
 
         <section>
-            <h2>Diffusion MRI data has group structure</h2>
-            <img src="img/sgl_design.png" height="500px">
+            <h2>Solving dMRI as a linear problem</h2>
+            <img src="img/dMRI_group_structure.png" height="500px">
         </section>
 
         <section>
@@ -1192,6 +1172,11 @@
         <div class="cite">
             <a href="http://statweb.stanford.edu/~tibs/lasso/lasso.pdf">Tibshirani (1996)</a>
         </div>
+        </section>
+
+        <section>
+            <h2>Diffusion MRI data has group structure</h2>
+            <img src="img/dMRI_group_structure.png" height="500px">
         </section>
 
         <section>
@@ -1237,6 +1222,20 @@
         </section>
 
         <section>
+            <h2> Accurately classifies patients/controls</h2>
+            <img src="img/als_classification_results.png" height="500px">
+            <p>Classification accuracy of ~84% (AUC of 0.9)</p>
+        </section>
+
+        <section>
+            <h2> Correctly finds biological basis</h2>
+            <div style="position: absolute; top:2em; left:6em;">
+            <img src="img/als_coefficients.gif" height="600px">
+            </div>
+
+        </section>
+
+        <!-- <section>
             <h2> Accurate classification and feature detection</h2>
             <img src="img/sgl_result.png" height="300px">
             <p>Classification accuracy of ~84% (AUC of 0.9)</p>
@@ -1244,19 +1243,26 @@
             <div class="cite">
                 <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
             </div>
+        </section> -->
+
+        <section>
+            <h2>Brain age (regression)</h2>
+            <img src="img/age_regression.png" height="550px">
         </section>
 
         <section>
-            <h2>Age regression</h2>
+            <h2>Sparse distribution of coefficients</h2>
+            <div style="position: absolute; top:2em; left:6em;">
+            <img src="img/age_coefficients.gif" height="600px">
+            </div>
         </section>
 
         <section>
         <h2>Summary</h2>
             <p class="fragment">Sparse Group Lasso accurately discovers structure in dMRI data</p>
-            <p class="fragment">Classification of disease states</p>
-            <p class="fragment">In a regression setting, prediction of continuous measures <br> (e.g, "brain age", IQ, reading skills)</p>
+            <p class="fragment">Classification of different states (patient/control)</p>
+            <p class="fragment">Prediction of continuous measures <br> (e.g, "brain age", IQ, reading skills)</p>
         </section>
-
 
         <section>
             <h2>Future applications</h2>
