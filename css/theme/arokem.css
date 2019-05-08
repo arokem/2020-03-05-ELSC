@@ -203,10 +203,11 @@ body {
   vertical-align: top; }
 
 .reveal .cite {
+  text-align: left;
   position: absolute;
   left: 750px;
   top: 600px;
-  font-size: 0.6em;
+  font-size: 0.5em;
 }
 
 /*********************************************

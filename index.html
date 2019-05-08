@@ -6,7 +6,7 @@
 		<meta name="description" content="Talk at HSDI, May 16th, 2019">
 		<meta name="author" content="Ariel Rokem">
 
-		<title> Opportunities and challenges for data-driven neuroscience </title>
+		<title> The era of brain observatories </title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/arokem.css">
@@ -72,13 +72,16 @@
     <section>
         <img src="img/eScience-infographic.png" height=300>
         <p class="fragment">
-            Data-driven research
-        </p>
+                Building a DS community of practice: open, reproducible, rigorous and ethical
+            </p>
         <p class="fragment">
             Data science training
         </p>
         <p class="fragment">
-            Building a community of practice: open, reproducible, rigorous and ethical
+            Development of tools and practices
+        </p>
+        <p class="fragment">
+            Data-driven research
         </p>
 
         <!-- <p class="fragment"><img src="img/msdse-sponsors.png" height=100></p> -->
@@ -164,7 +167,7 @@
         </div>
 
         <div class="cite" style="font-size:14px">
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/26232230">Kashturi et al. (2015)</a>
+            <a href="https://www.ncbi.nlm.nih.gov/pubmed/26232230">Kasthuri et al. (2015)</a>
             <br>
             <a href="https://www.biorxiv.org/content/early/2016/01/17/037044">Bellec et al. (2016)</a>
             <br>
@@ -207,7 +210,6 @@
                       <ul>
                         <p>
                           Allen Institute for Brain Science<br>
-                          <br>
                         </p>
                       </ul>
                     </div>
@@ -220,12 +222,24 @@
               <div class="textcol col-23">
                 <ul>
                   <p>
-                    Human Connectome Project (HCP),<br>
-                    (2012-2015), N = ~1,200<br>
+                    Human Connectome Project (HCP), N = ~1,200
                   </p>
                 </ul>
               </div>
             </div>
+            <div class="row fragment fade-in">
+                    <div class="col-13 textcol">
+                      <img class="logo" src="img/ping-logo.png" width="200" align="middle" alt="PING logo" border="0">
+                    </div>
+                    <div class="textcol col-23">
+                      <ul>
+                        <p>
+                          Pediatric Imaging Neurocognition and Genetics (PING),<br> N = >1,000<br>
+                        </p>
+                      </ul>
+                    </div>
+                  </div>
+
             <div class="row fragment fade-in">
               <div class="col-13 textcol">
                 <img class="logo" src="img/child-mind-institute-hbn-logo.jpg" width="200" align="middle" alt="Healthy Brain Network logo">
@@ -233,8 +247,7 @@
               <div class="textcol col-23">
                 <ul>
                   <p>
-                    Healthy Brain Network (HBN),<br>
-                    (2016--), &nbsp; N = ~10,000<br>
+                    Healthy Brain Network (HBN),&nbsp; N = ~10,000<br>
                   </p>
                 </ul>
               </div>
@@ -246,8 +259,7 @@
               <div class="textcol col-23">
                 <ul>
                   <p>
-                    Adolescent Brain Cognitive Development,<br>
-                    (2016--), &nbsp; N = ~10,000
+                    Adolescent Brain Cognitive Development (ABCD), &nbsp; N = ~10,000
                   </p>
                 </ul>
               </div>
@@ -259,8 +271,7 @@
               <div class="textcol col-23">
                 <ul>
                   <p>
-                    UK Biobank,<br>
-                    (2018--), &nbsp; N = ~500,000
+                    UK Biobank, &nbsp; N = ~500,000
                   </p>
                 </ul>
               </div>
@@ -396,7 +407,7 @@
 	<section>
 		<h2> Convolutional networks</h2>
 		<p class="fragment">Capitalize on spatial correlations in images</p>
-		<p class="fragment">Inspired by the mammalian visual system</p>
+		<p class="fragment">Inspired by the visual system</p>
 
 		<div class="cite">
 			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
@@ -760,6 +771,23 @@
 		<p class="fragment">Can we find the correspondence between imaging contrasts?</p>
 	</section> -->
 
+	<section>
+            <h4>OCT => OCTA </h4>
+            <img src="img/oct2octa.png" height=500px>
+            <div class=cite>
+                <a href="https://www.nature.com/articles/s41598-019-42042-y">Lee et al. (2019), Scientific Reports</a>
+            </div>
+    </section>
+
+    <section>
+            <h4>OCT => OCTA </h4>
+            <img src="img/oct2octa_cues.png">
+            <div class=cite>
+                <a href="https://www.nature.com/articles/s41598-019-42042-y">Lee et al. (2019), Scientific Reports</a>
+            </div>
+    </section>
+
+
     <section>
 		<h4>MRI => MRI </h4>
 		<video width="800" autoplay loop>
@@ -796,22 +824,6 @@
 
 	</section>
  -->
-
-	<section>
-		<h4>OCT => OCTA </h4>
-		<img src="img/oct2octa.png" height=500px>
-		<div class=cite>
-			<a href="https://www.nature.com/articles/s41598-019-42042-y">Lee et al. (2019), Scientific Reports</a>
-		</div>
-    </section>
-
-	<section>
-		<h4>OCT => OCTA </h4>
-		<img src="img/oct2octa_cues.png">
-		<div class=cite>
-			<a href="https://www.nature.com/articles/s41598-019-42042-y">Lee et al. (2019), Scientific Reports</a>
-		</div>
-	</section>
 
 
 	<!-- <section>
@@ -855,22 +867,11 @@
 	<section>
 		<h2>Application: cross-modal image registration</h2>
 		<img src='img/compare_registrations.png'>
+		<h4 class="fragment"> What is being encoded by the network? </h4>
 		<div class="cite">
 			<a href="https://www.biorxiv.org/content/early/2018/03/27/289926">Xiao, Wu, Lee & Rokem <br> (<em>in prep</em>)</a>
 		</div>
 	</section>
-
-    <section>
-		<h4> What is being encoded by the network? </h4>
-		<video width="800" autoplay loop>
-			<source src="img/t2t1.mov">
-		</video>
-		<div class="cite">
-			<br>
-			<a href="https://www.biorxiv.org/content/early/2018/03/27/289926">Xiao, Wu, Lee & Rokem <br>(<em>in prep</em>)</a>
-		</div>
-	</section>
-
 
 	<section>
 		<h2>Challenges</h2>
@@ -1313,7 +1314,7 @@
 	</section>
 
     <section id="afq-browser">
-		<h3>Challenge: improved data exploration and data sharing</h3>
+		<h4>AFQ-Browser: A web app for visualization and analysis of diffusion MRI</h4>
 		<div style="position: absolute; left:70px; top:60px;">
 			<img src="img/jason.jpg" height="200">
 			<br>
@@ -1334,15 +1335,19 @@
 			<br>
 			Anisha <br> Keshavan
 		</div>
-	</section>
+		<!-- <div class="cite">
+            <a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, <br> Smith, Keshavan & Rokem (Nature Communications, 2018)</a>
+        </div> -->
+    </section>
 
 	<section>
-		<h2>The solution</h2>
-		<p class="fragment">A web-based application</p>
+		<h2>AFQ-Browser</h2>
+        <p class="fragment">A web-based application</p>
+        <p class="fragment">Leverages modern visualization frameworks</p>
 		<p class="fragment">Builds a web-site for a diffusion MRI dataset</p>
 		<p class="fragment">Automatically uploads the website to Github</p>
 		<div class="cite">
-			<a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, Smith, Keshavan & Rokem (2018)<br> Nature Communications</a>
+			<a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, <br> Smith, Keshavan & Rokem (Nature Communications, 2018)</a>
 		</div>
 	</section>
 
@@ -1355,11 +1360,12 @@
 		</video>
 
 		<div class="cite">
-			<a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, Smith, Keshavan & Rokem (2018)<br> Nature Communications</a>
-		</div>
+            <a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, <br> Smith, Keshavan & Rokem (Nature Communications, 2018)</a>
+        </div>
 
 	</section>
-	<section>
+
+    <section>
 		<h2> Exploratory data analysis</h2>
 
 		<p class="fragment">Enhances published results<p>
@@ -1367,9 +1373,8 @@
 		<p class="fragment">Enables new discoveries in old datasets</p>
 
 		<div class="cite">
-			<a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, Smith, Keshavan & Rokem (2018)<br> Nature Communications</a>
-		</div>
-
+            <a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, <br> Smith, Keshavan & Rokem (Nature Communications, 2018)</a>
+        </div>
 	</section>
 
 	<section>
@@ -1378,8 +1383,8 @@
 		<img src="./img/afq-browser-static.png" width="800px">
 
 		<div class="cite">
-			<a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, Smith, Keshavan & Rokem (2018)<br> Nature Communications</a>
-		</div>
+            <a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, <br> Smith, Keshavan & Rokem (Nature Communications, 2018)</a>
+        </div>
 
 		<svg class="fragment" width="400" height="110"  style="position: absolute; left:435px; top:500px;">
 			<rect rx="10" ry="10" width="150" height="60" style="fill:yellow;stroke-width:3;stroke:rgb(1,0,0);opacity:0.4;" />
@@ -1400,8 +1405,8 @@
 		</video>
 
 		<div class="cite">
-			<a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, Smith, Keshavan & Rokem (2018)<br> Nature Communications</a>
-		</div>
+            <a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, <br> Smith, Keshavan & Rokem (Nature Communications, 2018)</a>
+        </div>
 
 	</section>
 
@@ -1409,10 +1414,11 @@
 		<h2>Summary</h2>
 		<p class="fragment">Exploratory data analysis</p>
 		<p class="fragment">Automated data sharing</p>
-		<p class="fragment">Dimensionality reduced data in tidy table format</p>
+        <p class="fragment">Dimensionality reduced data in tidy table format</p>
+        <p class="fragment">Facilitates interdisciplinary collaboration</p>
 		<div class="cite">
-			<a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, Smith, Keshavan & Rokem (2018)<br> Nature Communications</a>
-		</div>
+            <a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, <br> Smith, Keshavan & Rokem (Nature Communications, 2018)</a>
+        </div>
 	</section>
 
 
@@ -1528,7 +1534,7 @@
                 <p class="fragment">
                 Many different projects
                 <br>
-                <a href="https://nipy.org">https://nipy.org</a>
+                <a href="nipy.org">http://nipy.org</a>
             </div>
         </div>
         <div class="imgcite two-col fragment">
@@ -1541,7 +1547,7 @@
             <p class="fragment">
             Well-documented
             <br>
-            <a href="https://dipy.org">https://dipy.org</a>
+            <a href="dipy.org">http://dipy.org</a>
             <div class="cite" style="font-size:14px">
                     <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
             </div>
@@ -1559,12 +1565,21 @@
     </section>
 
     <section>
-        <h2>Open to contributors</h2>
-        <img src="img/dipy_contributors.png">
-        <div class="cite" style="font-size:14px">
-            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
-        </div>
+            <h2>Open to contributors</h2>
+            <img src="img/dipy_contributors.png">
+            <div class="cite" style="font-size:14px">
+                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+            </div>
     </section>
+
+    <section>
+        <h2>Open to contributors</h2>
+        <a href="https://github.com/nipy/dipy/pull/1826"><img src="img/dipy_pr.png" height=500></a>
+        <div class="cite" style="font-size:14px">
+                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+        </div>
+</section>
+
 
     <section>
         <h2>Distributed collaboration</h2>
@@ -1585,11 +1600,12 @@
 		<h2>How can we get more people involved?</h2>
 	    <p class="fragment">Methods in data science are rapidly changing</p>
         <p class="fragment">Learning often require substantial hands-on experience</p>
+
         <div class="row fragment" data-fragment-index="1">
             <div class="imgcite two-col fragment">
                 <img src="img/carpentries-logo.png">
-                <img src="img/swc-logo.png" height="133px" height="200px">
-                <img src="img/dc-logo.png" height="133px" width="200px">
+                <img class="fragment" src="img/swc-logo.png" height="133px" width="200px">
+                <img class="fragment" src="img/dc-logo.png" height="133px" width="200px">
             </div>
 
             <div class="imgcite two-col fragment">
@@ -1598,32 +1614,45 @@
             <p class="fragment">Week-long events</p>
             <p class="fragment">Combination of learning and project work</p>
             <div class="cite">
-                <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem <br>(<em> 2018, PNAS</em>)</a>
+                <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem <br>(2018) PNAS</a>
 
             </div>
             </div>
     </div>
 	</section>
 
-    <!-- <section>
+    <section>
         <h3>A fine balance of pedagogy and hacking</a></h3>
         <img src="img/HackSpectrum.png" height="400">
         <div class="cite">
-            <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem <br>(<em>2018, PNAS</em>)</a>
+            <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem (2018), PNAS</a>
 
         </div>
-    </section> -->
+    </section>
 
 	<section>
 		<h2><a href="http://neurohackademy.org/">Neurohackademy</a></h2>
 		<br>
 		A Summer Institute in Neuroscience and Data Science
-		<img src="img/joy_of_hacking.png" height="400">
+        <img src="img/joy_of_hacking.png" height="400">
+
+        <div class="cite">
+                <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem <br>(<em>2018, PNAS</em>)</a>
+
+        </div>
+
 	</section>
 
     <section>
-        <h2>Final thoughts</h2>
-
+        <h3>The era of brain observatories: challenges and opportunities</h3>
+        <p>Methods that work in standard use may not apply to large datasets</p>
+        <p>=> Train machine learning algorithms to replace expert decision making</p>
+        <p>Algorithms are needed to extract information from complex high-dimensional data</p>
+        <p>=> Translate statistical techniques into practice in neuroscience</p>
+        <p>Tools are needed for data exploration and transparent sharing of results</p>
+        <p>=> Build browser-based applications for exploratory data analysis and data sharing </p>
+        <p>Sociotechnical structures are strained: collaboration, publication, training</p>
+        <p>=> Open source software collaborations and science-focused hack weeks</p>
     </section>
 
 	<section>
