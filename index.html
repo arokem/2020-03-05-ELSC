@@ -300,21 +300,39 @@
     <section>
 		<h2>Opportunities</h2>
 		<p class="fragment">New data sets will enable important new discoveries</p>
-		<p class="fragment">New methods</p>
 		<p class="fragment">Data-driven discovery</p>
 	</section>
 
-	<section>
-		<h2>Challenges</h2>
-		<p class="fragment">Methods that work in standard datsets may not apply at large scale</p>
-		<p class="fragment">&rarr; Train machine learning algorithms to process massive datasets</p>
-		<p class="fragment">Interpretable methods are needed to extract information from complex high-dimensional data</p>
-		<p class="fragment">&rarr; Develop statistical techniques that reduce and harness this complexity</p>
-		<p class="fragment">Tools are needed for data exploration and transparent sharing of results</p>
-		<p class="fragment">&rarr; Build browser-based applications for exploratory data analysis and data sharing </p>
-		<p class="fragment">Sociotechnical structures are strained: collaboration, publication, training</p>
-		<p class="fragment">&rarr; Open source software collaborations and science-focused hack weeks</p>
-	</section>
+    <section>
+        <div class="twocol">
+
+        <div class="col">
+        Column 1 Content
+        </div>
+
+        <div class="col">
+        Column 2 Content
+        </div>
+
+    </div>
+    </section>
+    <section>
+        <h2>Challenges</h2>
+        <div class="twocol">
+        <div class="col">
+		<p class="fragment">Standard research procedures do not apply at large scale</p>
+		<p class="fragment">Statistical analysis struggle to model high-dimensional data </p>
+		<p class="fragment">Tools needed for data exploration and transparent sharing of results</p>
+        <p class="fragment">Sociotechnical structures are strained</p>
+        </div>
+        <div class="col">
+        <p class="fragment">&rarr; Train machine learning algorithms to process massive datasets</p>
+		<p class="fragment">&rarr; Develop models that harness high-dimensional complexity</p>
+        <p class="fragment">&rarr; Develop applications for exploratory data analysis and data sharing </p>
+        <p class="fragment">&rarr; Open-source software as a basis for data science collaboration and training</p>
+        </div>
+        </div>
+    </section>
 
 
 	<section>
@@ -348,14 +366,19 @@
 	</section>
 
     <section>
-            <div align=center><h4>Optical Coherence Tomography (OCT)</h4>
-                High-fidelity <em> in vivo </em> measurements of retinal structure at micron resolution
-                <div class="fragment" align="middle">
-                    <image src="img/OCT.png" width="400px">
-                </div>
-                <div class="fragment" align="middle">
-                    <image src="img/OCT-irf.png" width="400px">
-                </div>
+        <div align=center><h4>Optical Coherence Tomography (OCT)</h4>
+        High-fidelity <em> in vivo </em> measurements of retinal structure at micron resolution
+        <div class="twocol">
+        <div class="col">
+        <div class="fragment" align="middle">
+            <image src="img/OCT.png" width="400px">
+        </div>
+        </div>
+        <div class="col">
+        <div class="fragment" align="middle">
+            <image src="img/OCT-irf.png" width="400px">
+        </div>
+        </div>
     </section>
 
 	<section>
@@ -373,7 +396,7 @@
 				2.5 TB of data
 		</div>
 		<div class="fragment" style="position: absolute; left: 400px; top: 55px;" >
-			<p>Linked to <E></E>PIC electronic medical records
+			<p>Linked to EPIC electronic medical records
 			<p> For each OCT we know:
 				<small>
 			<p> Visual acuity
@@ -467,22 +490,20 @@
 
 	<section>
 		<h4><div align="center">Detecting clinical features: intraretinal fluid segmentation</div></h4>
-		<image src="./img/unet-vs-humans.png" height="500px">
+		<image src="./img/unet-vs-humans.png" height="480px">
 			<div style="position:absolute; left:580px;top:70px">
-				<image src="./img/white-square.png" height="500px">
+				<image src="./img/white-square.png" height="480px">
 			</div>
-			<div style="position: absolute; left: 700px; top: 620px" >
-				<small><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5508840/">Lee, Tyring, Deruyter, Wu, Rokem & Lee (2016)<br> Biomed opt Express</a>
-				</small>
+			<div class="cite" style="position: absolute; left: 500px;" >
+				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5508840/">Lee, Tyring, Deruyter, Wu, Rokem & Lee (2016) Biomed opt Express</a>
 			</div>
 	</section>
 
 	<section>
 		<h4><div align="center">Detecting clinical features: intraretinal fluid segmentation</div></h4>
-		<image src="./img/unet-vs-humans.png" height="500px">
-			<div style="position: absolute; left: 700px; top: 620px" >
-				<small><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5508840/">Lee, Tyring, Deruyter, Wu, Rokem & Lee (2016)<br> Biomed opt Express</a>
-				</small>
+		<image src="./img/unet-vs-humans.png" height="480px">
+			<div class="cite" style="position: absolute; left: 500px;" >
+				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5508840/">Lee, Tyring, Deruyter, Wu, Rokem & Lee (2016) Biomed opt Express</a>
 			</div>
 	</section>
 
@@ -494,7 +515,6 @@
 		Retinal segmentation
 		<div class="cite" style="font-size:14px">
 			<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5752269/">Xiao, Bucher, Wu, Rokem, Lee, Marra, Fallon, Diaz-Aguilar, Aguilar, Friedlander & Lee (2017), JCI Insight</a>
-
 		</div>
 	</section>
 
@@ -1021,55 +1041,9 @@
 		</div>
 	</section>
 
-	<!--
-	<section>
-		<h2>Automated Fiber Quantification (AFQ)</h2>
-		<img src="img/afq1.png" height="420">
-
-		<div class="cite">
-			<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049790">Yeatman et al. (2012)</a>
-		</div>
-	</section>
-	-->
 	<section>
 		<img align="center" src="img/pyafq_segmentation1.gif" height="500">
 	</section>
-
-	<!--
-	<section>
-		<h2>Automated Fiber Quantification (AFQ)</h2>
-		<img src="img/afq2.png" height="420">
-
-		<div class="cite">
-			<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049790">Yeatman et al. (2012)</a>
-		</div>
-	</section>
-	-->
-	<!--
-	<section>
-		<h2>Automated Fiber Quantification (AFQ)</h2>
-		<img src="img/afq3.png" height="420">
-
-		<div class="cite">
-			<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049790">Yeatman et al. (2012)</a>
-		</div>
-	</section>
-
-	<section>
-		<h2>Automated Fiber Quantification (AFQ)</h2>
-		<img src="img/afq4.png" height="420">
-
-		<div class="cite">
-			<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049790">Yeatman et al. (2012)</a>
-		</div>
-	</section>
-
-	<section>
-		<h2>Challenges</h2>
-		<p class="fragment">Mass univariate analysis</p>
-		<p class="fragment">ROI-based analysis</p>
-	</section>
-	-->
 
 	<section>
 		<img align="center" src="img/pyafq_segmentation2.gif" height="500">
@@ -1083,7 +1057,7 @@
 	</section>
 
 	<section id="afq-insight">
-        <h3>Interpretable and accurate machine learning</h3>
+        <h3>Modeling individual variability in dMRI </h3>
         <div style="position: absolute; left:40px; top:80px;">
         <img src="img/adam.jpeg" height="300">
             <br>
@@ -1102,7 +1076,7 @@
         </section>
 
         <section>
-            <h2>Solving dMRI as a linear problem</h2>
+            <h2>Diffusion MRI as a set of linear equations</h2>
             <img src="img/dMRI_group_structure.png" height="500px">
         </section>
 
@@ -1186,7 +1160,7 @@
         </section>
 
         <section>
-            <h2>Multiple biological causes</h2>
+            <h2>Multiple biological processes in aging</h2>
             <div style="position: absolute; top:2em; left:6em;">
             <img src="img/age_coefficients.gif" height="600px">
             </div>
@@ -1206,7 +1180,7 @@
         </section>
 
         <section>
-            <h2> Correctly finds biological basis</h2>
+            <h2> Biological cause of ALS is localized</h2>
             <div style="position: absolute; top:2em; left:6em;">
             <img src="img/als_coefficients.gif" height="600px">
             </div>
@@ -1227,7 +1201,7 @@
         <section>
         <h2>Summary</h2>
             <p class="fragment">Sparse Group Lasso capitalizes on brain structure</p>
-            <p class="fragment">Prediction of continuous measures <br> (e.g, "brain age", IQ, reading skills)</p>
+            <p class="fragment">Prediction of continuous measures <br> (e.g, "brain age", reading skills)</p>
             <p class="fragment">Classification of different states (patient/control)</p>
             <p class="fragment">Correctly identifies sparse biological causes</p>
         </section>

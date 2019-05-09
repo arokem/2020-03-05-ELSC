@@ -98,3 +98,11 @@ i {
 .reveal .smaller{
   font-size: 0.5em !important;
 }
+
+
+.twocol{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
