@@ -70,9 +70,10 @@
     </section>
 
     <section>
-        <img src="img/eScience-infographic.png" height=300>
+        <img src="img/eScience-infographic.png" height=400>
+        <!-- <p class="fragment"><img src="img/msdse-sponsors.png" height=100></p> -->
         <p class="fragment">
-                Data science training
+            Data science training
         </p>
         <p class="fragment">
             Development of tools and practices for reproducible research
@@ -84,7 +85,6 @@
             Data-driven research
         </p>
 
-        <!-- <p class="fragment"><img src="img/msdse-sponsors.png" height=100></p> -->
     </section>
 
 	<section>
@@ -308,7 +308,7 @@
         <div class="twocol">
         <div class="col">
 		<p class="fragment" data-fragment-index="1" style="text-align:left;">Standard research procedures do not apply at large scale</p>
-		<p class="fragment" data-fragment-index="3" style="text-align:left;">Statistical analysis struggle to model high-dimensional data </p>
+		<p class="fragment" data-fragment-index="3" style="text-align:left;">Statistical approaches struggle to model high-dimensional data </p>
 		<p class="fragment" data-fragment-index="5" style="text-align:left;">Recovering structure requires extensive exploration</p>
         <p class="fragment" data-fragment-index="7" style="text-align:left;">Sociotechnical structures are strained</p>
         </div>
@@ -645,27 +645,26 @@
         <h2>How do we scale this up?</h2>
         <p class="fragment">Train a neural network on citizen scientist ratings</p>
         <p class="fragment">Transfer learning with VGG16/ImageNet</p>
+		<img class="fragment" src="img/braindr_learning_curves.png" height="380">
 		<div class="cite" style="position: absolute; left:500px;">
             <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
         </div>
 	</section>
 
 	<section>
-		<h2>Scaling expertise using citizen scientist ratings</h2>
-		<img src="img/braindr_learning_curves.png" height="450">
-		<div class="cite" style="position: absolute; left:500px;">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
-        </div>
-	</section>
-
-
-	<section>
-		<h2>Scaling expertise using citizen scientist ratings</h2>
+		<h2>Neural network matches expert performances</h2>
 		<img src="img/braindr_final_rocs.png" height="450">
 		<div class="cite" style="position: absolute; left:500px;">
                 <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
         </div>
 	</section>
+
+    <section>
+        <img src="img/braindr_overview.jpg" height=450px >
+        <div class="cite" style="position: absolute; left:500px;">
+                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
+        </div>
+    </section>
 
 
 	<section>
@@ -675,14 +674,6 @@
         <a href="https://www.frontiersin.org/articles/10.3389/fninf.2019.00029/full">Keshavan, Yeatman & Rokem (2019), Frontiers in Neuroinformatics</a>
         </div>
     </section>
-
-	<section>
-		<h2>Summary</h2>
-		<p>When there is enough training data: deep learning</p>
-		<p>When we need to scale up: citizen scientists</p>
-		<p>Model of expertise (random forest) for aggregation</p>
-		<p>Model of perception (neural network) for automation and scaling</p>
-	</section>
 
     <section>
         <h2>Democratizing citizen science</h2>
@@ -827,14 +818,13 @@
 	</section>
 
 	<section>
-		<h2>Challenges</h2>
-		<p> Methods that work in standard use may not apply to large datasets</p>
-		<p class>&rarr; Train machine learning algorithms to replace expert decision making</p>
-		<p class="fragment">Interpretable methods are needed to extract information from complex high-dimensional data</p>
-		<p class="fragment">&rarr; Develop statistical techniques that harness this complexity</p>
-	</section>
+        <h3>Using machine learning to understand brain function</h3>
+        <p class="fragment">Accurately predict individual variability</p>
+        <p class="fragment">Expose important biological features</p>
+    </section>
 
 	<section>
+        <h3><em>Tractometry</em> measures the physical properties of brain connections </h3>
 		<img src="./img/optic-radiation-postmortem.png" height="505" >
 	</section>
 
@@ -1024,22 +1014,30 @@
 	</section>
 
 	<section>
-		<img align="center" src="img/pyafq_segmentation1.gif" height="500">
-	</section>
+        <h3>The 3D structure of each brain is unique</h3>
+        <img align="center" src="img/pyafq_segmentation1.gif" height="400">
+        <h3><em>Tractometry</em> measures the physical properties of brain connections </h3>
+    </section>
 
 	<section>
-		<img align="center" src="img/pyafq_segmentation2.gif" height="500">
+        <h3>The 3D structure of each brain is unique</h3>
+        <img align="center" src="img/pyafq_segmentation2.gif" height="400">
+        <h3><em>Tractometry</em> measures the physical properties of brain connections </h3>
 	</section>
-	<section>
+
+    <section>
 		<h2>Amyotrophic Lateral Sclerosis (ALS)</h2>
 		<img src="img/sarica_results.png" height="300px">
+        <h3 class="fragment">Challenges:</h3>
+        <p class="fragment">Mass univariate analysis: reduced statistical power</p>
+        <p class="fragment">Focus on a region of interest: lose the entire picture</p>
 		<div class="cite">
 			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
 		</div>
 	</section>
 
 	<section id="afq-insight">
-        <h3>Modeling individual variability in dMRI </h3>
+        <h3>Model individual differences using machine learning</h3>
         <div style="position: absolute; left:40px; top:80px;">
         <img src="img/adam.jpeg" height="300">
             <br>
@@ -1071,6 +1069,7 @@
         <section>
             <h2>Linear regression</h2>
             <img src="img/regression_equation.png" width=600><br>
+            <p class="fragment">The objective:</p>
             <img class="fragment" src="img/ols_penalty.png" width="200px">
 
             <p class="fragment">But in our case p (number of variables) >> n (number of subjects) </p>
@@ -1192,6 +1191,7 @@
             <h2>Future applications</h2>
             <p class="fragment">Healthy Brain Network dataset</p>
             <p class="fragment">ABCD dataset</p>
+            <p class="fragment">"A data science toolbox to study human connectomes"</p>
             <p class="fragment">Multi-region, multi-neuron recordings</p>
             <div class="fragment">
             <p>Neurons &rarr; features</p>
@@ -1475,10 +1475,9 @@
             Well-documented
             <br>
             <a href="dipy.org">http://dipy.org</a>
-            <div class="cite" style="font-size:14px position: absolute; left:400px">
-                    <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+            <div class="cite" style="font-size:14px position: absolute; left:0px">
+                    <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
             </div>
-
         </div>
     </div>
     </section>
@@ -1486,24 +1485,24 @@
     <section>
         <h2>Open to users</h2>
         <img src="img/dipy-conda-downloads.png">
-        <div class="cite" style="font-size:14px">
-            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+        <div class="cite" style="font-size:14px position: absolute; left:0px">
+            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
         </div>
     </section>
 
     <section>
             <h2>Open to contributors</h2>
             <img src="img/dipy_contributors.png">
-            <div class="cite" style="font-size:14px">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+            <div class="cite" style="font-size:14px position: absolute; left:0px">
+            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
             </div>
     </section>
 
     <section>
         <h2>Open to contributors</h2>
         <a href="https://github.com/nipy/dipy/pull/1826"><img src="img/dipy_pr.png" height=500></a>
-        <div class="cite" style="font-size:14px">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+        <div class="cite" style="font-size:14px position: absolute; left:0px">
+                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
         </div>
 </section>
 
@@ -1511,10 +1510,10 @@
     <section>
         <h2>Distributed collaboration</h2>
         <img src="img/dipy_global.png">
-        <div class="cite" style="font-size:14px">
-        <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+        <div class="cite" style="font-size:14px position: absolute; left:0px">
+        <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
         </div>
-    </section>
+</section>
 
 	<!--
 	<section>
@@ -1540,9 +1539,8 @@
             <p>Hack weeks</p>
             <p class="fragment">Week-long events</p>
             <p class="fragment">Combination of learning and project work</p>
-            <div class="cite">
-                <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem <br>(2018) PNAS</a>
-
+            <div class="cite" style="font-size:14px position: absolute; left:450px">
+                <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem (2018) PNAS</a>
             </div>
             </div>
     </div>
@@ -1551,21 +1549,19 @@
     <section>
         <h3>A fine balance of pedagogy and hacking</a></h3>
         <img src="img/HackSpectrum.png" height="400">
-        <div class="cite">
-            <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem (2018), PNAS</a>
-
+        <div class="cite" style="font-size:14px position: absolute; left:450px">
+                <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem (2018) PNAS</a>
         </div>
     </section>
 
 	<section>
 		<h2><a href="http://neurohackademy.org/">Neurohackademy</a></h2>
-		<br>
-		A Summer Institute in Neuroscience and Data Science
+        A Summer Institute in Neuroscience and Data Science
         <img src="img/joy_of_hacking.png" height="400">
+        <img src="img/nimh-logo.gif" height="50px">
 
-        <div class="cite">
-                <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem <br>(<em>2018, PNAS</em>)</a>
-
+        <div class="cite" style="font-size:14px position: absolute; left:450px">
+                <a href="https://www.pnas.org/content/115/36/8872"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem (2018) PNAS</a>
         </div>
 
 	</section>
@@ -1574,13 +1570,14 @@
         <h3>A data science agenda for neuroscience</h3>
 
         <p class="fragment"> Machine learning methods for biomedical imaging </p>
-
+        <p class="fragment">Scale up to meet the demands of large datasets</p>
+        <p class="fragment">Use citizen science to solve the training data dilemma</p>
         <p class="fragment">Machine learning and statistical learning</p>
-        Computational infrastructure for data-driven science
-
-        <p class="fragment">Building software  </p>
-
-        </p>
+        <p class="fragment">Develop methods that are both accurate</p>
+        <p class="fragment">And discover important biological features</p>
+        <p class="fragment">Computational infrastructure for data-driven science</p>
+        <p class="fragment">Building open-source software</p>
+        <p class="fragment">Fostering an open-source community</p>
     </section>
 
 	<section>
