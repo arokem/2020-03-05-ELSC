@@ -61,7 +61,7 @@
 		<br>
 		<p><a href="http://arokem.org">Ariel Rokem</a>,
 		<a href="http://escience.washington.edu">University of Washington eScience Institute</a> </p>
-		<p>  <small>Follow along at: <t><a href="https://neuroinformatics.uw.edu/20191204cogper">https://neuroinformatics.uw.edu/20191204cogper</t></a></small></p>
+		<p>  <small>Follow along at: <t><a href="https://arokem.github.io/2019-12-03-CogPer">https://arokem.github.io/2019-12-03-CogPer</t></a></small></p>
 		<a href="https://escience.washington.edu"><img src="img/eScience.png" height="100px" alt="eScience logo" align="middle"></a>
 		<a href="https://compneuro.washington.edu/"><img src="img/cnc.png" height="100px" alt="CNC logo" align="middle"></a>
 		<a href="http://uwin.washington.edu/"><img src="img/uwin-logo.jpg" height="100px" alt="CNC logo" align="middle"></a>
@@ -745,10 +745,10 @@
         </div>
     </section>
 
-    <section>
+    <!-- <section>
         <h2>Beyond labeled data</h2>
     Discovering subtle relationships between different images of the same object
-    </section>
+    </section> -->
 
     <!-- <section>
 		<h2>The IXI dataset</h2>
@@ -760,34 +760,31 @@
 		<p class="fragment">Can we find the correspondence between imaging contrasts?</p>
 	</section> -->
 
-    <section>
+    <!-- <section>
             <h4>OCT &rarr; OCTA </h4>
             <img src="img/oct2octa_cues.png">
             <div class=cite style="position:absolute; left:300px">
                     <a href="https://www.nature.com/articles/s41598-019-42042-y">Lee, Tyring, Wu, Xiao, Rokem, DeRuyter, Zhang, Tufail, Wang, Lee (2019), Scientific Reports</a>
             </div>
-    </section>
+    </section> -->
 
-	<section>
+	<!-- <section>
             <h4>OCT &rarr; OCTA </h4>
             <img src="img/oct2octa1.png" height=300>
             <div class=cite style="position:absolute; left:300px">
                 <a href="https://www.nature.com/articles/s41598-019-42042-y">Lee, Tyring, Wu, Xiao, Rokem, DeRuyter, Zhang, Tufail, Wang, Lee (2019), Scientific Reports</a>
             </div>
-    </section>
+    </section> -->
 
-
-    <section>
+    <!-- <section>
             <h4>OCT &rarr; OCTA </h4>
             <img src="img/oct2octa2.png" height=200>
             <div class=cite style="position:absolute; left:300px">
                 <a href="https://www.nature.com/articles/s41598-019-42042-y">Lee, Tyring, Wu, Xiao, Rokem, DeRuyter, Zhang, Tufail, Wang, Lee (2019), Scientific Reports</a>
             </div>
-    </section>
+    </section> -->
 
-
-
-    <section>
+    <!-- <section>
 		<h4>MRI &rarr; MRI </h4>
 		<video height="400" autoplay loop>
 			<source src="img/t2t1.mov">
@@ -796,7 +793,7 @@
 		<div class="cite" style="position:absolute; left:600px">
 			<a href="https://www.biorxiv.org/content/early/2018/03/27/289926">Xiao, Wu, Lee & Rokem (<em>in prep</em>)</a>
 		</div>
-	</section>
+    </section> -->
 
 	<!-- <section>
 		<h2> Imaging contrasts</h2>
@@ -810,9 +807,7 @@
 			<a href="https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/">Ronneberger et al. 2015</a>
 		</div>
 
-	</section>
-     -->
-
+	</section> -->
 
 	<!-- <section>
 		<h4>MRI &rarr; MRI </h4>
@@ -849,8 +844,7 @@
 			<a href="https://www.biorxiv.org/content/early/2018/03/27/289926">Xiao, Wu, Lee & Rokem <br> (<em>in prep</em>)</a>
 		</div>
 
-	</section>
- -->
+	</section> -->
 
 	<!-- <section>
 		<h2>Application: cross-modal image registration</h2>
@@ -905,26 +899,36 @@
             </div>
     </section>
 
-
-	<section>
-        <h3>Using machine learning to understand brain function</h3>
-        <p class="fragment">Accurately predict individual variability</p>
-        <p class="fragment">Expose important biological features</p>
-    </section>
-
     <section>
-            <h2>Brain age</h2>
-            <img class="fragment" src="img/brown_brain_age.png" height="400px">
-            <div class="cite"><a href="https://www.cell.com/current-biology/fulltext/S0960-9822(12)00793-2">Brown et al. (2012)</cite></a>
+        <h3>Using machine learning to understand brain function</h3>
+        <div class="fragment current-visible" data-fragment-index="1">
+          <img class="logo" src="img/wrf_sgl_approach1.svg" width="700" align="middle" alt="Old approach #1: machine learning for clinical diagnosis">
+        </div>
+        <div class="fragment current-visible" data-fragment-index="2">
+          <img class="logo" src="img/wrf_sgl_approach1.svg" width="300" align="middle" alt="Old approach #1: machine learning for clinical diagnosis">
+          <img class="logo" src="img/wrf_sgl_approach2.svg" width="700" align="middle" alt="Old approach #2: mass univariate statistics to learn white matter correlates">
+        </div>
+        <div class="fragment" data-fragment-index="3">
+          <div class="row">
+            <div class="two-col" style="align-items: center;">
+              <img class="logo" src="img/wrf_sgl_approach1.svg" width="300" align="middle" alt="Old approach #1: machine learning for clinical diagnosis">
+            </div>
+            <div class="two-col" style="align-items: center;">
+              <img class="logo" src="img/wrf_sgl_approach2.svg" width="300" align="middle" alt="Old approach #2: mass univariate statistics to learn white matter correlates">
+            </div>
+          </div>
+          <img class="logo" src="img/wrf_sgl_approach3.svg" width="700" align="middle" alt="Our proposal: make predictions AND discover informative features">
+        </div>
+        <aside class="notes" data-markdown>
+          - Define white matter tractometry in a second
+          - But first, frame landscape of current approaches
+          - Domain agnostic, data science point of view
+          - #1: Machine learning used to predict clinical diagnosis from brain measures
+          - #2: Group comparisons between patients and controls used to understand brain features
+          - Mine: Make predictions and discover informative features
+        </aside>
     </section>
 
-	<section>
-        <h4>Age from brain networks</h4>
-        <img src="./img/tract_groups.png" height="470">
-        <div class="cite" style="position: absolute; left:600px;">
-            Image from <a href="https://www.ncbi.nlm.nih.gov/pubmed/16141282">Catani and ffytche (2015)</a>
-        </div>
-    </section>
 
 	<section>
         <h4>Diffusion MRI measures the physical properties of brain connections </h4>
@@ -1203,13 +1207,13 @@
 
 
         <section>
-            <h2>Solving diffusion MRI as a general linear model</h2>
+            <h2>Diffusion MRI as a generalized linear model</h2>
             <img src="img/dMRI_group_structure.png" height="500px">
         </section>
 
 
         <section>
-            <h2>Solving diffusion MRI as a general linear model</h2>
+            <h2>Diffusion MRI as a generalized linear model</h2>
             <img src="img/regression_equation.png" width=600><br>
             <p class="fragment">The objective:</p>
             <img class="fragment" src="img/ols_penalty.png" width="200px">
@@ -1279,7 +1283,7 @@
             <h2>Brain age </h2>
             <img src="img/age_regression.png" height="500px">
             <br>
-            MAE: 4.2 years (+/- 2.7 years)
+            MAE: 3.6 years, R<sup>2</sup>=0.3
         </section>
 
         <section>
@@ -1299,7 +1303,7 @@
         <section>
             <h2> Accurately classifies patients/controls</h2>
             <img src="img/als_classification_results.png" height="450px">
-            <p>Classification accuracy of 84% (+/- 1%) <br> AUC of 0.91 (+/- 0.01)</p>
+            <p>Classification accuracy of % (+/- 1%) <br> AUC of 0.978 (+/- 0.01)</p>
         </section>
 
         <section>
@@ -1324,40 +1328,10 @@
         <section>
         <h2>Sparse Group Lasso</h2>
             <p class="fragment">Capitalizes on brain structure</p>
-            <p class="fragment">Predicts continuous measures <br> (e.g, "brain age", reading skills)</p>
+            <p class="fragment">Predicts continuous measures <br> (e.g, "brain age")</p>
             <p class="fragment">Classifies of different states (patient/control)</p>
             <p class="fragment">Identifies dense or sparse biological feature sets</p>
         </section>
-
-        <section>
-            <h2>Future applications</h2>
-            <p class="fragment">Healthy Brain Network dataset</p>
-            <p class="fragment">ABCD dataset</p>
-            <p class="fragment">Multi-region, multi-neuron recordings</p>
-            <div class="fragment">
-            <p>Neurons &rarr; features</p>
-            <p>Brain regions &rarr; groups</p>
-            <p>Trials &rarr; observations</p>
-            </div>
-        </section>
-
-    <section>
-        <h2>Group structure in multi-neuron recordings</h2>
-        <img src="img/steinmetz1.png" height="500px">
-        <div class="cite"><a href="https://www.biorxiv.org/content/10.1101/474437v1">Steinmetz et al. (2019)</a></div>
-    </section>
-
-    <section>
-        <h2>Group structure in multi-neuron recordings</h2>
-        <img src="img/steinmetz2.png" height="500px">
-        <div class="cite"><a href="https://www.biorxiv.org/content/10.1101/474437v1">Steinmetz et al. (2019)</a></div>
-    </section>
-
-    <section>
-        <h2>Group structure in multi-neuron recordings</h2>
-        <img src="img/steinmetz3.png" height="500px">
-        <div class="cite"><a href="https://www.biorxiv.org/content/10.1101/474437v1">Steinmetz et al. (2019)</a></div>
-    </section>
 
 
     <section>
@@ -1413,7 +1387,7 @@
 	</section>
 
     <section id="afq-browser">
-            <h3>A browser-based tool for visualization and analysis of diffusion MRI data</h3>
+        <h3>A browser-based tool for visualization and analysis of diffusion MRI data</h3>
 
 		<div style="position: absolute; left:70px; top:140px;">
 			<img src="img/jason.jpg" height="200">
@@ -1437,7 +1411,7 @@
 		</div>
 		<div class="cite" style="position: absolute; left:380px">
                 <a href="https://www.nature.com/articles/s41467-018-03297-7">Yeatman, Richie-Halford, Smith, Keshavan & Rokem (2018), Nature Communications</a>
-            </div>
+        </div>
     </section>
 
 	<section>
@@ -1513,7 +1487,7 @@
 	</section>
 
 	<section>
-		<h2>Data sharing facilitates  interdisciplinary collaboration</h2>
+		<h2>Data sharing facilitates interdisciplinary collaboration</h2>
         <p class="fragment">Dimensionality reduced data in tidy table format</p>
         <p class="fragment">Facilitates interdisciplinary collaboration</p>
 		<div class="cite" style="position: absolute; left:380px">
@@ -1526,6 +1500,8 @@
         <p class="fragment">Image processing at scale</p>
         <p class="fragment">Machine learning</p>
         <p class="fragment">Exploration, visualization and data sharing</p>
+        <p class="fragment">Future work:</p>
+        <p class="fragment">Human Connectome Project<br><img src="img/nimh-logo.gif" height="50px"></p>
     </section>
 
 	<!--
@@ -1672,13 +1648,6 @@
             </div>
     </section>
 
-    <section>
-        <h2>Open to contributors</h2>
-        <a href="https://github.com/nipy/dipy/pull/1826"><img src="img/dipy_pr.png" height=500></a>
-        <div class="cite" style="position: absolute; left:0px">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
-        </div>
-</section>
 
 
     <section>
