@@ -322,61 +322,72 @@
 		<p class="fragment">Some methods require expert examination</p>
 		<p class="fragment">Time consuming, tedious</p>
 		<p class="fragment">&rarr; Do not scale well!</p>
-	</section>
+    </section>
 
     <section>
         <h2>The solution</h2>
-        <p class="fragment">Expert &rarr; results</p>
-        <p class="fragment">Expert &rarr; training data &rarr; machine learning &rarr; results</p>
-
+        <p class="fragment">Expert &rarr; label </p>
+        <p class="fragment">Expert &rarr; training data &rarr; machine learning &rarr; label</p>
     </section>
 
-	<section>
-		<h3>Learning from experts</h3>
-		<div style="position: absolute; left:270px; top:60px;">
-			<img src="img/aaron.jpeg" height="200">
+    <section>
+        <h2>Example: clinical diagnostics</h2>
+        <div style="position: absolute; left:175px; top:60px;">
+			<img src="img/parmita.jpeg" height="150">
+			<br>
+			<small>Parmita Mehta  <br> (UW CSE)</small>
+		</div>
+
+        <div style="position: absolute; left:325px; top:60px;">
+			<img src="img/aaron.jpeg" height="150">
 			<br>
 			<small>Aaron Lee <br> (UW Ophthalmology)</small>
-		</div>
+        </div>
 
-		<div style="position: absolute; left:470px; top:60px;">
-			<img src="img/sa.jpeg" height="200">
+        <div style="position: absolute; left:500px; top:60px;">
+			<img src="img/magda_sm.jpg" height="150">
 			<br>
-			<small>Sa Xiao <br>(UW Ophthalmology &rarr; Google)</small>
+			<small>Magda Balazinska <br> (UW CSE)</small>
 		</div>
-	</section>
+
+        <div style="position: absolute; left:650px; top:60px;">
+			<img src="img/suinlee.jpg" height="150">
+			<br>
+			<small>Su-In Lee<br> (UW CSE)</small>
+		</div>
+
+    </section>
 
     <section>
-        <h3>Oxygen induced retinopathy</h3>
-        <img src="img/oir_retina_only_expert.png" height="400">
-        <br>
-        Retinal segmentation
-        <div class="cite" style="position: absolute; left: 250px;">
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5752269/">Xiao, Bucher, Wu, Rokem, Lee, Marra, Fallon, Diaz-Aguilar, Aguilar, Friedlander & Lee (2017), JCI Insight</a>
+        <h4>Retinal imaging</h4>
+        OCT measures retinal structure at high resolution
+        <div class="twocol">
+        <div class="col">
+        <div class="fragment" align="middle">
+            <image src="img/OCT.png" width="400px">
+        </div>
+        </div>
+        <div class="col">
+        <div class="fragment" align="middle">
+            <image src="img/OCT-irf.png" width="400px">
         </div>
     </section>
 
     <section>
-        <h3>Oxygen induced retinopathy</h3>
-        <img src="img/oir_vasoobliteration_only_expert.png" height="400">
-        <br>
-        The vaso-obliteration zone
-        <div class="cite" style="position: absolute; left: 250px;">
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5752269/">Xiao, Bucher, Wu, Rokem, Lee, Marra, Fallon, Diaz-Aguilar, Aguilar, Friedlander & Lee (2017), JCI Insight</a>
-        </div>
+        <h4>Retinal imaging</h4>
+        Fundus photos show the state of the vasculature and the optic disk
+        <image src="img/optic-nerve-comparison_290.jpg" width="400px">
     </section>
 
     <section>
-        <h3>oxygen induced retinopathy</h3>
-        <img src="img/oir_neovascular_only_expert.png" height="400">
-        <br>
-        The neovascular tufts
-        <div class="cite" style="position: absolute; left: 250px;">
-                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5752269/">Xiao, Bucher, Wu, Rokem, Lee, Marra, Fallon, Diaz-Aguilar, Aguilar, Friedlander & Lee (2017), JCI Insight</a>
-        </div>
+        <h4>Automated glaucoma detection</h4>
+        <p class="fragment">Objective: build an auomated system for detection of glaucoma</p>
+        <p class="fragment">Automated diagnosis of glaucoma could have substantial impact</p>
+        <p class="fragment">Early detection is difficult</p>
+        <p class="fragment">Crucial for successful clinical intervention</p>
     </section>
 
-	<section>
+    <section>
 		<h2>Artificial neural networks</h2>
 		<p class="fragment" data-fragment-index="1">A family of machine learning algorithms</p>
 		<p class="fragment" data-fragment-index="2">Biologically inspired</p>
@@ -426,6 +437,105 @@
     </section>
 
     <section>
+        <h4>UK Biobank dataset</h4>
+        <p>771 Glaucoma patients (1283 retinas imaged) </p>
+        <p>863 healthy controls (1193 retinas imaged) </p>
+        <p>55 participants progress to glaucoma (98 retinas imaged) </p>
+    </section>
+
+    <section>
+        <image src="img/concept_fig.png" height=450>
+            <div class="cite" style="position: absolute; left:200px">
+                Mehta, Lee, Wen, Bannit, Chen, Bojkian, Petersen, Egan, Lee, Balazinska, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+    <section>
+        <image src="img/glaucoma_roc1.png" height=500></image>
+        <div class="cite" style="position: absolute; left:200px">
+            Mehta, Lee, Wen, Bannit, Chen, Bojkian, Petersen, Egan, Lee, Balazinska, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+    <section>
+        <image src="img/glaucoma_roc2.png" height=500></image>
+        <div class="cite" style="position: absolute; left:200px">
+            Mehta, Lee, Wen, Bannit, Chen, Bojkian, Petersen, Egan, Lee, Balazinska, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+    <section>
+        <image src="img/glaucoma_roc3.png" height=500></image>
+        <div class="cite" style="position: absolute; left:200px">
+            Mehta, Lee, Wen, Bannit, Chen, Bojkian, Petersen, Egan, Lee, Balazinska, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+
+    <section>
+        <h4>Opening the black box</h4>
+        <p class="fragment">Find the features of an image that classify it as healthy/glaucoma</p>
+        <p class="fragment">Integrated gradients (Sundararajan 2017)</p>
+    </section>
+
+    <section>
+        <image src="img/healthy_ig.png">
+    </section>
+
+    <section>
+        <image src="img/glaucoma_ig.png">
+    </section>
+
+    <section>
+        <image src="img/concept_fig.png" height=450>
+            <div class="cite" style="position: absolute; left:200px">
+                Mehta, Lee, Wen, Bannit, Chen, Bojkian, Petersen, Egan, Lee, Balazinska, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+<!--
+	<section>
+		<h3>Learning from experts</h3>
+		<div style="position: absolute; left:270px; top:60px;">
+			<img src="img/aaron.jpeg" height="200">
+			<br>
+			<small>Aaron Lee <br> (UW Ophthalmology)</small>
+		</div>
+
+		<div style="position: absolute; left:470px; top:60px;">
+			<img src="img/sa.jpeg" height="200">
+			<br>
+			<small>Sa Xiao <br>(UW Ophthalmology &rarr; Google)</small>
+		</div>
+	</section>
+
+    <section>
+        <h3>Oxygen induced retinopathy</h3>
+        <img src="img/oir_retina_only_expert.png" height="400">
+        <br>
+        Retinal segmentation
+        <div class="cite" style="position: absolute; left: 250px;">
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5752269/">Xiao, Bucher, Wu, Rokem, Lee, Marra, Fallon, Diaz-Aguilar, Aguilar, Friedlander & Lee (2017), JCI Insight</a>
+        </div>
+    </section>
+
+    <section>
+        <h3>Oxygen induced retinopathy</h3>
+        <img src="img/oir_vasoobliteration_only_expert.png" height="400">
+        <br>
+        The vaso-obliteration zone
+        <div class="cite" style="position: absolute; left: 250px;">
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5752269/">Xiao, Bucher, Wu, Rokem, Lee, Marra, Fallon, Diaz-Aguilar, Aguilar, Friedlander & Lee (2017), JCI Insight</a>
+        </div>
+    </section>
+
+    <section>
+        <h3>oxygen induced retinopathy</h3>
+        <img src="img/oir_neovascular_only_expert.png" height="400">
+        <br>
+        The neovascular tufts
+        <div class="cite" style="position: absolute; left: 250px;">
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5752269/">Xiao, Bucher, Wu, Rokem, Lee, Marra, Fallon, Diaz-Aguilar, Aguilar, Friedlander & Lee (2017), JCI Insight</a>
+        </div>
+    </section>
+
+
+    <section>
         <h2>Fully convolutional networks</h2>
 
         Take an image as input and produce an image as output
@@ -465,25 +575,9 @@
         <div class="cite" style="position: absolute; left: 250px;">
                 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5752269/">Xiao, Bucher, Wu, Rokem, Lee, Marra, Fallon, Diaz-Aguilar, Aguilar, Friedlander & Lee (2017), JCI Insight</a>
         </div>
-    </section>
+    </section> -->
 
-
-    <section>
-        <h4>Optical Coherence Tomography (OCT)</h4>
-        High-fidelity <em> in vivo </em> measurements of retinal structure at micron resolution
-        <div class="twocol">
-        <div class="col">
-        <div class="fragment" align="middle">
-            <image src="img/OCT.png" width="400px">
-        </div>
-        </div>
-        <div class="col">
-        <div class="fragment" align="middle">
-            <image src="img/OCT-irf.png" width="400px">
-        </div>
-    </section>
-
-    <section>
+    <!-- <section>
         <h4>The UW OCT/EMR data-base</h4>
         <div class="fragment" style="position: absolute; left: 10px; top: 55px;" >
             <p>
@@ -544,15 +638,15 @@
 				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5508840/">Lee, Tyring, Deruyter, Wu, Rokem & Lee (2016) Biomed opt Express</a>
 			</div>
 	</section>
-
+ -->
 
     <section>
 		<h2>The solution</h2>
-		<p>Expert &rarr; results</p>
-		<p>Expert &rarr; training data &rarr; machine learning &rarr; results</p>
+		<p>Expert &rarr; label</p>
+		<p>Expert &rarr; training data &rarr; machine learning &rarr; label </p>
 		<p class="fragment">But: for many tasks, not enough training data</p>
 		<p class="fragment">&rarr; Amplify labeled data-sets with citizen science</p>
-		<p class="fragment">Expert &rarr; citizen science &rarr; training data &rarr; machine learning &rarr; results</small></p>
+		<p class="fragment">Expert &rarr; citizen science &rarr; training data &rarr; machine learning &rarr; label</small></p>
 	</section>
 
 	<section>
@@ -1730,9 +1824,6 @@
         </div>
     </section>
 
-    <section>
-            <img src="img/eScience-infographic.png" height=400>
-    </section>
 
     <!-- <section>
             <h4>Data science across domains</h4>
