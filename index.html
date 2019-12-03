@@ -292,6 +292,35 @@
 		<p class="fragment"><em>Data-driven discovery</em></p>
     </section>
 
+    <section>
+        <h3>Using machine learning to understand brain function</h3>
+        <div class="fragment current-visible" data-fragment-index="1">
+          <img class="logo" src="img/wrf_sgl_approach1.svg" width="700" align="middle" alt="Old approach #1: machine learning for clinical diagnosis">
+        </div>
+        <div class="fragment current-visible" data-fragment-index="2">
+          <img class="logo" src="img/wrf_sgl_approach1.svg" width="300" align="middle" alt="Old approach #1: machine learning for clinical diagnosis">
+          <img class="logo" src="img/wrf_sgl_approach2.svg" width="700" align="middle" alt="Old approach #2: mass univariate statistics to learn white matter correlates">
+        </div>
+        <div class="fragment" data-fragment-index="3">
+          <div class="row">
+            <div class="two-col" style="align-items: center;">
+              <img class="logo" src="img/wrf_sgl_approach1.svg" width="300" align="middle" alt="Old approach #1: machine learning for clinical diagnosis">
+            </div>
+            <div class="two-col" style="align-items: center;">
+              <img class="logo" src="img/wrf_sgl_approach2.svg" width="300" align="middle" alt="Old approach #2: mass univariate statistics to learn white matter correlates">
+            </div>
+          </div>
+          <img class="logo" src="img/wrf_sgl_approach3.svg" width="700" align="middle" alt="Our approach: make predictions AND discover informative features">
+        </div>
+        <aside class="notes" data-markdown>
+          - Define white matter tractometry in a second
+          - But first, frame landscape of current approaches
+          - Domain agnostic, data science point of view
+          - #1: Machine learning used to predict clinical diagnosis from brain measures
+          - #2: Group comparisons between patients and controls used to understand brain features
+          - Mine: Make predictions and discover informative features
+        </aside>
+    </section>
 
     <section>
     <h2>Challenges</h2>
@@ -444,7 +473,7 @@
     </section>
 
     <section>
-        <image src="img/concept_fig.png" height=450>
+        <image src="img/concept_fig1.png" height=450>
             <div class="cite" style="position: absolute; left:200px">
                 Mehta, Lee, Wen, Bannit, Chen, Bojkian, Petersen, Egan, Lee, Balazinska, Rokem (<em>in preparation</em>)</div>
     </section>
@@ -469,7 +498,8 @@
 
 
     <section>
-        <h4>Opening the black box</h4>
+
+        <img class="logo" src="img/wrf_sgl_approach3.svg" width="700" align="middle" alt="Our approach: make predictions AND discover informative features">
         <p class="fragment">Find the features of an image that classify it as healthy/glaucoma</p>
         <p class="fragment">Integrated gradients (Sundararajan 2017)</p>
     </section>
@@ -483,7 +513,7 @@
     </section>
 
     <section>
-        <image src="img/concept_fig.png" height=450>
+        <image src="img/concept_fig2.png" height=450>
             <div class="cite" style="position: absolute; left:200px">
                 Mehta, Lee, Wen, Bannit, Chen, Bojkian, Petersen, Egan, Lee, Balazinska, Rokem (<em>in preparation</em>)</div>
     </section>
@@ -993,37 +1023,6 @@
             </div>
     </section>
 
-    <section>
-        <h3>Using machine learning to understand brain function</h3>
-        <div class="fragment current-visible" data-fragment-index="1">
-          <img class="logo" src="img/wrf_sgl_approach1.svg" width="700" align="middle" alt="Old approach #1: machine learning for clinical diagnosis">
-        </div>
-        <div class="fragment current-visible" data-fragment-index="2">
-          <img class="logo" src="img/wrf_sgl_approach1.svg" width="300" align="middle" alt="Old approach #1: machine learning for clinical diagnosis">
-          <img class="logo" src="img/wrf_sgl_approach2.svg" width="700" align="middle" alt="Old approach #2: mass univariate statistics to learn white matter correlates">
-        </div>
-        <div class="fragment" data-fragment-index="3">
-          <div class="row">
-            <div class="two-col" style="align-items: center;">
-              <img class="logo" src="img/wrf_sgl_approach1.svg" width="300" align="middle" alt="Old approach #1: machine learning for clinical diagnosis">
-            </div>
-            <div class="two-col" style="align-items: center;">
-              <img class="logo" src="img/wrf_sgl_approach2.svg" width="300" align="middle" alt="Old approach #2: mass univariate statistics to learn white matter correlates">
-            </div>
-          </div>
-          <img class="logo" src="img/wrf_sgl_approach3.svg" width="700" align="middle" alt="Our proposal: make predictions AND discover informative features">
-        </div>
-        <aside class="notes" data-markdown>
-          - Define white matter tractometry in a second
-          - But first, frame landscape of current approaches
-          - Domain agnostic, data science point of view
-          - #1: Machine learning used to predict clinical diagnosis from brain measures
-          - #2: Group comparisons between patients and controls used to understand brain features
-          - Mine: Make predictions and discover informative features
-        </aside>
-    </section>
-
-
 	<section>
         <h4>Diffusion MRI measures the physical properties of brain connections </h4>
         <div class="fragment" style="position: absolute; left: 100px;">
@@ -1269,13 +1268,11 @@
     </section>
 
     <section>
-        <h3>The dilemma of standard statistical analysis</h3>
-        <p class="fragment">Mass univariate analysis: reduced statistical power</p>
-        <p class="fragment">Focus on a region of interest: lose the full picture</p>
+        <img class="logo" src="img/wrf_sgl_approach3.svg" width="700" align="middle" alt="Our approach: make predictions AND discover informative features">
     </section>
 
 	<section id="afq-insight">
-        <h4>A machine learning approach to model individual differences</h4>
+            Multidimensional analysis and detection of informative features in diffusion MRI measurements of human white matter
         <div style="position: absolute; left:40px; top:80px;">
         <img src="img/adam.jpeg" height="300">
             <br>
@@ -1425,6 +1422,7 @@
             <p class="fragment">Predicts continuous measures <br> (e.g, "brain age")</p>
             <p class="fragment">Classifies of different states (patient/control)</p>
             <p class="fragment">Identifies dense or sparse biological feature sets</p>
+
         </section>
 
 
@@ -1671,17 +1669,11 @@
 
 		<br>
 		<br>
-		Sparse Group Lasso:
-		<br>
-        <a href="https://github.com/richford/AFQ-Insight">https://github.com/richford/AFQ-Insight</a>
+        Automated Fiber Quantification:
         <br>
-		<br>
-		AFQ-Browser:
-		<br>
-		<a href="https://github.com/yeatmanlab/pyAFQ">https://github.com/yeatmanlab/pyAFQ</a>
-		<br>
+        <a href="https://github.com/richford/AFQ-Insight">https://github.com/richford/AFQ-Insight</a>
+        <a href="https://github.com/yeatmanlab/pyAFQ">https://github.com/yeatmanlab/pyAFQ</a>
 		<a href="https://github.com/yeatmanlab/AFQ-Browser">https://github.com/yeatmanlab/AFQ-Browser</a>
-		<br>
     </section>
 
     <section>
@@ -1728,7 +1720,7 @@
 
     <section>
         <h2>Open to users</h2>
-        <img src="img/dipy-conda-downloads.png">
+        <img src="img/dipy-pip-installs.png">
         <div class="cite" style="position: absolute; left:0px">
             <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
         </div>
@@ -1855,9 +1847,13 @@
 
 		<h2> Thanks! </h2>
 		<div style="position: absolute; left:100px; top:100px;" align="left">
-			Sa Xiao
+            Parmita Mehta
 			<br>
-			Aaron Lee
+            Aaron Lee
+            <br>
+            Magda Balazinska
+            <br>
+            Su-In Lee
 			<br>
 			Anisha Keshavan
 			<br>
