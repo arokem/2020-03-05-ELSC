@@ -208,7 +208,7 @@
     </section>
 
     <section>
-        <h4>Glaucoma</h4>
+        <h3>Glaucoma</h3>
         <p class="fragment">A leading cause of irreversible blindness</p>
         <p class="fragment">2020: 76 M people affected</p>
         <p class="fragment">2040 (predicted): 112 M people affected</p>
@@ -221,7 +221,7 @@
     </section>
 
     <section>
-        <h4>Glaucoma diagnosis</h4>
+        <h3>Glaucoma diagnosis</h3>
         <p class="fragment">Relies on multiple factors</p>
         <p class="fragment">Requires substantial expertise</p>
         <p class="fragment">Complex, expensive</p>
@@ -230,33 +230,90 @@
     </section>
 
     <section>
-        <h4>Retinal imaging</h4>
-        OCT measures retinal structure at high resolution
-        <div class="twocol">
-        <div class="col">
-        <div class="fragment" align="middle">
-            <image src="img/OCT.png" width="400px">
-        </div>
-        </div>
-        <div class="col">
-        <div class="fragment" align="middle">
-            <image src="img/OCT-irf.png" width="400px">
-        </div>
-    </section>
-
-    <section>
-        <h4>Automated glaucoma detection</h4>
+        <h3>Automated glaucoma detection</h3>
         <p class="fragment">Objective: build an auomated system for detection of glaucoma</p>
-        <p class="fragment">Incorporate information from multiple imaging modalities</p>
-        <p class="fragment">Incorporate other information</p>
+        <p class="fragment">Incorporate information from multiple sources</p>
         <p class="fragment">Provide interpretable results</p>
     </section>
 
     <section>
-        <h4>UK Biobank dataset</h4>
-        <p>771 Glaucoma patients (1283 retinas imaged) </p>
-        <p>863 healthy controls (1193 retinas imaged) </p>
-        <p>55 participants progress to glaucoma (98 retinas imaged) </p>
+        <h3>UK Biobank dataset</h3>
+        <p>863 glaucoma patients </p>
+        <p>771 healthy controls </p>
+        <p>55 participants who progress to glaucoma </p>
+        <div class="cite"><a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001779">Sudlow et al. (2015)</a></div>
+    </section>
+
+    <section>
+        <image src="img/concept_fig1.png" height=450>
+            <div class="cite" style="position: absolute; left:200px">
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+    <section>
+        <h4>Medical record models</h4>
+        <p class="fragment">Baseline: age, gender, ethnicity</p>
+        <p class="fragment">Model 1: + cardiovascular, pulmonary variables (e.g., BP, FVC, PEF)</p>
+        <p class="fragment">Model 2: + ocular data (e.g., IOP) </p>
+    </section>
+
+    <section>
+        <image src="img/glaucoma_roc1.png" height=500></image>
+        <div class="cite" style="position: absolute; left:200px">
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+    <section>
+        <img class="logo" src="img/wrf_sgl_approach3.svg" width="700" align="middle" alt="Our approach: make predictions AND discover informative features">
+        <p class="fragment">What features explain the diagnosis?</p>
+        <p class="fragment">SHAP values (Lundberg and Lee, 2017)</p>
+        <p class="fragment">See excellent explainer <a href="https://www.youtube.com/watch?v=wjd1G5bu_TY&feature=youtu.be">here</a></p>
+    </section>
+
+    <section>
+        <image src="img/glaucoma_tree_shap.png" height=450>
+            <div class="cite" style="position: absolute; left:200px">
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+    <section>
+        <image src="img/glaucoma_tree_shap_age.png" height=450>
+            <div class="cite" style="position: absolute; left:200px">
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+    <section>
+        <image src="img/glaucoma_tree_shap_physio.png" height=250>
+            <div class="cite" style="position: absolute; left:200px">
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+
+    <section>
+        <image src="img/concept_fig1.png" height=450>
+            <div class="cite" style="position: absolute; left:200px">
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+    <section>
+        <h3>Retinal imaging</h3>
+        Color fundus photos provide a view onto the optic nerve
+        <image src="img/optic-nerve-comparison_290.jpg" width="400px">
+    </section>
+
+    <section>
+        <h3>Retinal imaging</h3>
+        OCT measures 3D retinal structure at high resolution
+        <div class="twocol">
+        <div class="col">
+        <div align="middle">
+            <image src="img/OCT.png" width="400px">
+        </div>
+        </div>
+        <div class="col">
+        <div align="middle">
+            <image src="img/OCT-irf.png" width="400px">
+        </div>
     </section>
 
     <section>
@@ -301,23 +358,12 @@
 
     </section>
 
-	<section>
-		<img src="img/imagenet-fig4l.png">
-		<div class=cite>
-			<a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">Krizhevsky et al. 2012</a>
-		</div>
-    </section>
-
     <section>
-        <image src="img/concept_fig1.png" height=450>
-            <div class="cite" style="position: absolute; left:200px">
-        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
-    </section>
-
-    <section>
-        <image src="img/glaucoma_roc1.png" height=500></image>
-        <div class="cite" style="position: absolute; left:200px">
-            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+        <h4>Image models</h4>
+        <p class="fragment">Color fundus photos</p>
+        <p class="fragment">OCT</p>
+        <p class="fragment">CFP + OCT</p>
+        <p class="fragment">CFP + OCT + medical records</p>
     </section>
 
     <section>
@@ -327,17 +373,33 @@
     </section>
 
     <section>
-        <image src="img/glaucoma_roc3.png" height=500></image>
+        <img class="logo" src="img/wrf_sgl_approach3.svg" width="700" align="middle" alt="Our approach: make predictions AND discover informative features">
+        <p>SHAP values of individual networks</p>
+    </section>
+
+    <!-- <section>
+        <image src="img/glaucoma_slice_analysis_1.png" height=500></image>
+        <div class="cite" style="position: absolute; left:200px">
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section> -->
+
+
+    <section>
+        <image src="img/glaucoma_slice_analysis_2.png" height=500></image>
         <div class="cite" style="position: absolute; left:200px">
             Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
     </section>
 
 
     <section>
+        <image src="img/glaucoma_slice_analysis_full.png" height=500></image>
+        <div class="cite" style="position: absolute; left:200px">
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section>
 
+    <section>
         <img class="logo" src="img/wrf_sgl_approach3.svg" width="700" align="middle" alt="Our approach: make predictions AND discover informative features">
-        <p class="fragment">Find the features of an image that classify it as healthy/glaucoma</p>
-        <p class="fragment">Integrated gradients (Sundararajan 2017)</p>
+        <p>Saliency maps (Integrated gradients; Sundararajan 2017)</p>
     </section>
 
     <section>
@@ -349,9 +411,40 @@
     </section>
 
     <section>
+        <img class="logo" src="img/wrf_sgl_approach3.svg" width="700" align="middle" alt="Our approach: make predictions AND discover informative features">
+        <p>SHAP values of contributions to overall ensemble</p>
+    </section>
+
+    <section>
+        <image src="img/glaucoma_shap_ensemble.png" height=450>
+            <div class="cite" style="position: absolute; left:200px">
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+    <section>
+        <image src="img/concept_fig1.png" height=450>
+            <div class="cite" style="position: absolute; left:200px">
+                Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+    <section>
+        <image src="img/glaucoma_roc3.png" height=500></image>
+        <div class="cite" style="position: absolute; left:200px">
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+
+
+    <section>
         <image src="img/concept_fig2.png" height=450>
             <div class="cite" style="position: absolute; left:200px">
                 Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+    </section>
+
+    <section>
+        <image src="img/glaucoma_roc3.png" height=500></image>
+        <div class="cite" style="position: absolute; left:200px">
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
     </section>
 
     <section>
