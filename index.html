@@ -249,7 +249,7 @@
     <section>
         <image src="img/concept_fig1.png" height=450>
             <div class="cite" style="position: absolute; left:200px">
-        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
@@ -262,39 +262,55 @@
     <section>
         <image src="img/glaucoma_roc1.png" height=500></image>
         <div class="cite" style="position: absolute; left:200px">
-            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
         <img class="logo" src="img/wrf_sgl_approach3.svg" width="700" align="middle" alt="Our approach: make predictions AND discover informative features">
         <p class="fragment">What features explain the diagnosis?</p>
         <p class="fragment">SHAP values (Lundberg and Lee, 2017)</p>
-        <p class="fragment">See excellent explainer <a href="https://www.youtube.com/watch?v=wjd1G5bu_TY&feature=youtu.be">here</a></p>
     </section>
+
+    <section>
+        <h3>SHAP (SHapley Additive exPlanations) </h3>
+
+        <p class="fragment">Additive feature attribution method</p>
+        <p class="fragment">Explain prediction for each individual separately</p>
+        <p class=></p>
+        <p class="fragment">What is the <e>additive</e> impact of toggling a feature on/off? </p>
+        <p class="fragment">For example: how much more likely is a person to have glaucoma when you know they are 67 years old?</p>
+        <p class="fragment">Order of introducing features matters</p>
+        <p class="fragment">For example: if you already know the person has high IOP, the impact of their age might diminish</p>
+        <p class="fragment">So calculating Shapley values directly is difficult</p>
+        <p class="fragment">Instead: SHAP values are calculated as a locally-linear approximation of the original model (LIME; <a href="https://arxiv.org/abs/1602.04938">Ribeiro et al., 2016</a>)</p>
+        <p class="fragment"></p>
+        <p class="fragment">See excellent explainer <a href="https://www.youtube.com/watch?v=wjd1G5bu_TY&feature=youtu.be">here</a></p>
+        </section>
+
     <section>
         <image src="img/glaucoma_tree_shap_age.png" height=450>
             <div class="cite" style="position: absolute; left:200px">
-        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
         <image src="img/glaucoma_tree_shap_physio.png" height=250>
             <div class="cite" style="position: absolute; left:200px">
-        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
 
     <section>
         <image src="img/glaucoma_tree_shap.png" height=450>
             <div class="cite" style="position: absolute; left:200px">
-        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
 
     <section>
         <image src="img/concept_fig1.png" height=450>
             <div class="cite" style="position: absolute; left:200px">
-        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
@@ -371,7 +387,7 @@
     <section>
         <image src="img/glaucoma_roc2.png" height=500></image>
         <div class="cite" style="position: absolute; left:200px">
-            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
@@ -382,21 +398,21 @@
     <!-- <section>
         <image src="img/glaucoma_slice_analysis_1.png" height=500></image>
         <div class="cite" style="position: absolute; left:200px">
-            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section> -->
 
 
     <section>
         <image src="img/glaucoma_slice_analysis_2.png" height=500></image>
         <div class="cite" style="position: absolute; left:200px">
-            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
 
     <section>
         <image src="img/glaucoma_slice_analysis_full.png" height=500></image>
         <div class="cite" style="position: absolute; left:200px">
-            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
@@ -424,37 +440,37 @@
     <section>
         <image src="img/glaucoma_shap_ensemble.png" height=450>
             <div class="cite" style="position: absolute; left:200px">
-        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+        Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
         <image src="img/concept_fig1.png" height=450>
             <div class="cite" style="position: absolute; left:200px">
-                Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+                Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
         <image src="img/glaucoma_roc3.png" height=500></image>
         <div class="cite" style="position: absolute; left:200px">
-            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
         <image src="img/concept_fig2.png" height=450>
             <div class="cite" style="position: absolute; left:200px">
-                Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+                Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
         <image src="img/glaucoma_ptg_1.png" height=300></image>
         <div class="cite" style="position: absolute; left:200px">
-            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
         <image src="img/glaucoma_ptg_full.png" height=500></image>
         <div class="cite" style="position: absolute; left:200px">
-            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<em>in preparation</em>)</div>
+            Mehta, Petersen, Wen, Bannit, Chen, Bojkian, Egan, Lee, Balazinska, Lee, Rokem (<a href="https://www.biorxiv.org/content/10.1101/2020.02.26.967208v1">2020</a>)</div>
     </section>
 
     <section>
